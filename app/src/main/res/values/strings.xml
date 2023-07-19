@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FamilySafetyApp</string>
+    <string name="sos">SOS</string>
+    <string name="redcard_warning">In case of emergency keep telling family members to contact me</string>
+    <string name="guard">GUARD</string>
+    <string name="security">Security</string>
+    <string name="my_family">My Family</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="member_address">p-16,kalhalli bangalore 560042 ulsoor lake karnataka</string>
+    <string name="default_we_client">166590215743-o1jijrj2bvq4i3r7tvbnrtcbah3sudts.apps.googleusercontent.com</string>
+</resources>

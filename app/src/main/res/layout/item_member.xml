@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/family_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_member_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="@dimen/dim8dp"
+        android:src="@drawable/ic_member"
+        app:layout_constraintStart_toStartOf="@id/family_cardView"
+        app:layout_constraintTop_toTopOf="@id/family_cardView" />
+
+    <TextView
+        android:id="@+id/tv_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="@dimen/dim8dp"
+        android:text="Rajat kumar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_member_image"
+        app:layout_constraintTop_toTopOf="@id/iv_member_image" />
+
+    <ImageView
+        android:id="@+id/icon_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="@dimen/dim8dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="@id/tv_member_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_member_name" />
+
+    <TextView
+        android:id="@+id/tv_address_member"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:elevation="@dimen/dim8dp"
+        android:text="@string/member_address"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/family_cardView"
+        app:layout_constraintStart_toEndOf="@id/icon_location"
+        app:layout_constraintTop_toTopOf="@id/icon_location" />
+
+    <LinearLayout
+        android:id="@+id/battery_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:elevation="@dimen/dim8dp"
+        app:layout_constraintBottom_toBottomOf="@id/family_cardView"
+        app:layout_constraintStart_toStartOf="@id/family_cardView"
+        app:layout_constraintTop_toBottomOf="@id/iv_member_image">
+
+        <ImageView
+            android:id="@+id/icon_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_battery"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/tv_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90%"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/seaGreen"/>
+
+        <ImageView
+            android:id="@+id/icon_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_navigation"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/tv_distance_meters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="223M"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/icon_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wifi"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_wifi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIFI"
+            android:textColor="@color/black"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_call"
+        android:background="@drawable/circle"
+        android:elevation="@dimen/dim8dp"
+        app:layout_constraintStart_toEndOf="@id/battery_layout"
+        app:layout_constraintEnd_toEndOf="@id/family_cardView"
+        app:layout_constraintBottom_toBottomOf="@id/family_cardView"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_member"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

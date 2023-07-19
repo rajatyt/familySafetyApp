@@ -1,0 +1,8 @@
+
+7kotlin:S1128"Remove this unused import.(á»¸•úÿÿÿÿ
+;kotlin:S125G"Remove this commented out code.(è´ÝÀøÿÿÿÿ
+;kotlin:S125O"Remove this commented out code.(Ëó¡áþÿÿÿÿ
+<kotlin:S125"Remove this commented out code.(Ý€´ëûÿÿÿÿ
+<kotlin:S125•"Remove this commented out code.(Ëó¡áþÿÿÿÿ
+jkotlin:S3776["RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(£šˆá
+okotlin:S1170"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ã†øÿÿÿÿ

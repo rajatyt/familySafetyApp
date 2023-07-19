@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="160dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/invite_cardView_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/invite_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_invite"
+        android:elevation="@dimen/dim8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/invite_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="6dp"
+        android:elevation="@dimen/dim8dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="@id/invite_cardView_adapter"
+        app:layout_constraintStart_toStartOf="@id/invite_cardView_adapter"
+        app:layout_constraintTop_toTopOf="@id/invite_cardView_adapter" />
+
+    <TextView
+        android:id="@+id/invite_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dim8dp"
+        android:text="Rajat"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/invite_image"
+        app:layout_constraintTop_toTopOf="@id/invite_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/invite_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:elevation="@dimen/dim8dp"
+        android:text="7019074944"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/invite_image"
+        app:layout_constraintTop_toBottomOf="@id/invite_image"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
